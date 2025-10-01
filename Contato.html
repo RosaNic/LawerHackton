@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Silva & Associados</title>
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      background-color: #0D0D0D; /* fundo preto */
+      color: #F5F5F5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      border-bottom: 3px solid #B22222;
+    }
+
+    header h1 {
+      color: #FF0000;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #1C1C1C;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #FF0000;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #F5F5F5;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      background: #333;
+      color: white;
+      font-size: 1rem;
+    }
+
+    input:focus, textarea:focus {
+      border: 2px solid #FF0000;
+    }
+
+    textarea {
+      resize: none;
+      min-height: 120px;
+    }
+
+    button {
+      background: #B22222;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: #FF0000;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+
+    .info {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .info p {
+      margin: 8px 0;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rosa Osório</h1>
+    <p>Contato</p>
+  </header>
+
+  <section>
+    <h2>Entre em Contato</h2>
+    <form action="#" method="post">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+
+    <div class="info">
+      <p>📍 Av. Santa Cecília, nº 417, Balneário Regina Maria, Mongaguá</p>
+      <p>📞 (11) 96625-5929</p>
+      <p>✉️ adv.rosaosorio@gmail.com</p>
+    </div>
+  </section>
+</body>
+</html>

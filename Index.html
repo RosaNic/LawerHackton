@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escritório de Advocacia</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Georgia", serif;
+      background-color: #0D0D0D; /* fundo preto */
+      color: #F5F5F5; /* texto claro */
+      line-height: 1.6;
+    }
+
+    /* Cabeçalho */
+    header {
+      background: #000; /* preto sólido */
+      color: #F5F5F5;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 3px solid #B22222; /* vermelho escuro */
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+      color: #FF0000; /* vermelho principal */
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #F5F5F5;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #FF0000;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url(Img/view-3d-justice-scales-1-scaled.jpg) center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6); /* overlay preto */
+    }
+
+    .hero h2, .hero p, .hero a {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #FF0000; /* vermelho destaque */
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero a {
+      display: inline-block;
+      background: #B22222; /* vermelho escuro */
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    .hero a:hover {
+      background: #FF0000; /* vermelho forte */
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    }
+
+    /* Seções */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #FF0000;
+    }
+
+    .areas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1C1C1C; /* cinza quase preto */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-left: 4px solid #FF0000; /* detalhe vermelho */
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #FF4444; /* vermelho médio */
+    }
+
+    /* Rodapé */
+    footer {
+      background: #000;
+      color: #F5F5F5;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 3px solid #B22222;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      color: #FF0000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rosa Osório</h1>
+    <p>Escritório de Advocacia</p>
+    <nav>
+      <a href="Index.html">Início</a>
+      <a href="Sobre.html">Sobre</a>
+      <a href="Areas.html">Áreas de Atuação</a>
+      <a href="Contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Justiça com Força e Determinação</h2>
+    <p>Defendendo seus direitos com seriedade e experiência.</p>
+    <a href="Contato.html">Agende uma consulta</a>
+  </section>
+
+  </section>
+
+  <footer>
+    <p>© 2025 - Rosa Osório - </p>
+  </footer>
+</body>
+</html>
